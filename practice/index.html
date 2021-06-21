@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
 
+    <style>
+        /* style part */
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        header{
+            background-color:rgb(245, 245, 245);
+            text-align:center;
+            margin-bottom:10px;
+        }
+        header h1{
+            padding:60px 0px 20px 0px;
+        }
+        header p{
+            padding:0px 0px 50px 0px;
+        }
+        nav{
+            background-color:black;
+            overflow:hidden;
+        }
+        nav a{
+            float:left;
+            display:block;
+            padding:10px;
+            color:white;
+            text-decoration:none;
+
+        }
+        nav a:hover{
+            background-color:rgb(225, 225, 225);
+            color:black;
+            transition:0.2s ease-in;
+        }
+        .row{
+            margin:auto;
+        }
+        .column{
+            width:27%;
+            float:left;
+            margin:10px;
+            padding:10px;
+            /* box-shadow: 0px 0px 5px black; */
+            border-radius: 3px;
+        }
+        .row:after{
+            content:"";
+            clear:both;
+            display:table;
+        }
+        input{
+            float:right;
+            border:none;
+            margin:8px;
+            padding:3px;
+        }
+        input[type="submit"]{
+            margin: 10px 10px 0px -10px;
+            display:none;
+        }
+        input[type="text"]{
+            background-image:url("searchicon.png");
+            background-repeat:no-repeat;
+            background-size:12px;
+            padding-left:15px;
+            background-position:2px center;
+            transition:0.2s ease-in;
+            width:40px;
+            border-radius: 5%;
+
+        }
+        input[type="text"]:focus{
+            width:200px;
+        }
+        .aside{
+            width:20%;
+        }
+        .main{
+            width:50%;
+        }
+        .main p{
+            padding-bottom:20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    
+<!-- code part -->
+
+<header>
+    <h1>Omid Quraishi</h1>
+    <p>this is my first web site that i made with html and css</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <input type="submit" value="Search">
+        <input type="text" placeholder="search..">
+
+    </nav>
+</header>
+<div class="row">
+    <div class="column aside">
+        <h2>column</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto neque deserunt consectetur adipisci, nemo eveniet consequatur quisquam blanditiis facere aspernatur dolore corporis?</p>
+    </div>
+    <div class="column main">
+        <h2>column</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto neque deserunt consectetur adipisci, nemo eveniet consequatur quisquam blanditiis facere aspernatur dolore corporis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto aspernatur necessitatibus magnam. Aut exercitationem totam quibusdam nam. Quas rerum repellendus debitis fuga.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat fugiat at dolor maiores officia cum voluptatem tempore provident deserunt nulla nam suscipit laudantium voluptate, aspernatur debitis? Cum adipisci dignissimos voluptatum ducimus voluptatem, sed numquam in repudiandae distinctio atque omnis expedita magni, at porro.</p>
+    </div>
+    <div class="column aside">
+        <h2>column</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto neque deserunt consectetur adipisci, nemo eveniet consequatur quisquam blanditiis facere aspernatur dolore corporis?</p>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
